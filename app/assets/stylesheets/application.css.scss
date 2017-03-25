@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+//home styles
+.home-callout{
+  color: white;
+ 
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+ 
+  background: #435a75; /* Old browsers */
+  background: -webkit-linear-gradient(right, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+//navbar styles
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+  
+}
+
+.navbar-default .navbar-toggle{
+  border: none;
+  &:hover, &:focus {    //<this nesting is allowed in sass not native css
+    background-color: #F793BE;
+    opacity: 0.35;
+  }
+}
+
+
+
+.navbar-default .navbar-brand {
+  font-weight: 500;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a{
+  color: #F793BE;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover{
+  color: #F793BE;
+  opacity: 0.75;
+}
+
+
+.navbar{
+  border: none;
+  border-radius: 0 ;
+  
+ 
+  background: -moz-linear-gradient(left, #435a75 0%, #5e84a4 50%, #9eb6c8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

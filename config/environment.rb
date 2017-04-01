@@ -10,6 +10,6 @@ ActionMailer::Base.smtp_settings = {
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
   :domain         => 'obscure-plains-70361.herokuapp.com'
-  :authentication => :plain,
+  :authentication => :plain
 }
 ActionMailer::Base.delivery_method = :smtp

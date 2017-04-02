@@ -36,6 +36,10 @@ h1, h2, h3 {
   background: linear-gradient(to left, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+.alert-notice {
+  display: none;
+}
+
 
 //navbar styles
 .navbar-default .navbar-toggle .icon-bar{
@@ -78,3 +82,4 @@ h1, h2, h3 {
   background: -webkit-linear-gradient(left, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #435a75 0%,#5e84a4 50%,#9eb6c8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+

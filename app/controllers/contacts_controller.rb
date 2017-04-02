@@ -10,6 +10,7 @@ class ContactsController < ApplicationController
       email = params[:email]
       body = params[:contact][:comments]
       ContactMailer.contact_email(name, email, body).deliver #<--this is the action for actually sending the email
+      default from: 'lucas.b.hickey@hotmail.com'
       flash[:success] = "Message Sent."
       redirect_to new_contact_path
     else 

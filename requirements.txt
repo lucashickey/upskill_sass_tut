@@ -1,0 +1,5 @@
+Memberships
+-User should see link fot Basic plan on home page
+-User should see link for pro plan on home page 
+-Basic plan link should take straight to devise plan
+-pro plan link should point to custom sign up
